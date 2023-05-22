@@ -1,5 +1,5 @@
 function init() {
-  var w = 800;
+  var w = 800; 
   var h = 600;
   var padding = 80;
   var svg = null; // Store reference to the SVG element
