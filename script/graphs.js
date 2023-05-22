@@ -2,7 +2,7 @@ function init() {
     var w = 800;
     var h = 600;
     var padding = 100;
-
+ 
   
   // Load the CSV file
   d3.csv("csv/ausArrivals.csv").then(function(csvData) {
