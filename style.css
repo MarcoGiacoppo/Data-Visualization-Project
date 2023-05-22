@@ -322,10 +322,10 @@ button:hover{
 }
 @keyframes pulsing{
     0%{
-        box-shadow: 0 0 0 0 rgb(4, 71, 105);
+        box-shadow: 0 0 0 0 rgb(255, 0, 0);
     }
     100%{
-        box-shadow: 0 0 0 2px rgb(5, 93, 137);
+        box-shadow: 0 0 0 2px rgb(255, 0, 0);
     }
 }
 /* End of graph page */
@@ -336,3 +336,6 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
+
+  
+  

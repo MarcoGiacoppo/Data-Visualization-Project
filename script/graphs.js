@@ -126,6 +126,7 @@ function init() {
         .style("font-size", "14px")
         .style("border-radius", "5px")
         .style("pointer-events", "none");
+        
 
         svg.selectAll(".dot")
         .data(dataset)
@@ -140,7 +141,7 @@ function init() {
         .on("mouseover", function(d) {
             var arrival = d3.select(this).datum()[state];
             tooltip.style("visibility", "visible")
-              .html("Arrivals: " + arrival);
+              .html("Arrivals: " + arrival.toLocaleString());
           
             // Get the position of the dot
             var dot = d3.select(this);
@@ -180,7 +181,7 @@ function init() {
         .attr("x", -h / 2)
         .attr("y", padding / 2)
         .transition()
-        .duration(1500)
+        .delay(1000)
         .attr("dy", "-1em")
         .style("text-anchor", "middle")
         .style("font-size", "14px")
@@ -191,7 +192,7 @@ function init() {
         .attr("x", w / 2)
         .attr("y", h - padding / 2)
         .transition()
-        .duration(1500)
+        .delay(1000)
         .attr("text-anchor", "middle")
         .style("font-size", "14px")
         .style("font-weight", "bold")
